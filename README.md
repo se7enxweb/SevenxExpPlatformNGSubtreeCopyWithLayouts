@@ -45,7 +45,9 @@ class" error).
 
 ---
 
-## Installation / Registration
+## Installation
+
+See [doc/INSTALL.md](doc/INSTALL.md) for full installation instructions.
 
 The bundle is registered in `config/bundles.php`:
 
@@ -183,3 +185,25 @@ The root rule group UUID is fixed in the nglayouts schema:
 
 All new rules are created under this group, matching the behaviour of rules
 created via the Netgen Layouts admin UI.
+
+---
+
+## License & Copyright
+
+Copyright © 1998 - 2026, 7x. All rights reserved.
+
+SevenxExpPlatformNGSubtreeCopyWithLayouts is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+SevenxExpPlatformNGSubtreeCopyWithLayouts is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SevenxExpPlatformNGSubtreeCopyWithLayouts in [LICENSE](LICENSE.md).
+If not, see <http://www.gnu.org/licenses/>.
+
+See [COPYRIGHT.md](COPYRIGHT.md) for full copyright and license assignment details.
