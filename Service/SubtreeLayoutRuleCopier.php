@@ -9,7 +9,7 @@ use Ibexa\Contracts\Core\Repository\LocationService;
 use Ibexa\Contracts\Core\Repository\Values\Content\Location;
 use Netgen\Layouts\API\Service\LayoutResolverService;
 use Netgen\Layouts\API\Values\LayoutResolver\RuleGroup;
-use Ramsey\Uuid\Uuid;
+use Symfony\Component\Uid\Uuid;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
@@ -225,7 +225,9 @@ final class SubtreeLayoutRuleCopier
 
         // Add target
         $targetStruct = $this->layoutResolverService->newTargetCreateStruct($targetType);
-        $targetStruct->value = $newTargetValue;
+        $targetStruct->value = in_array($targetType, ['ibexa_location', 'ibexa_subtree'], true)
+            ? (int) $newTargetValue
+            : $newTargetValue;
         $this->layoutResolverService->addTarget($ruleDraft, $targetStruct);
 
         // Publish rule
