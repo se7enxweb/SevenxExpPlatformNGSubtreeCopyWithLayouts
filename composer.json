@@ -1,0 +1,66 @@
+{
+    "name": "se7enxweb/exp-platform-ng-subtree-copy-with-layouts",
+    "type": "symfony-bundle",
+    "license": "GPL-2.0-or-later",
+    "description": "Copies an Ibexa DXP content subtree and carries over Netgen Layouts resolver rules, section assignments and object state metadata to the newly created locations.",
+    "homepage": "https://se7enx.com",
+    "keywords": [
+        "ibexa",
+        "ibexa-dxp",
+        "netgen",
+        "netgen-layouts",
+        "symfony",
+        "symfony-bundle",
+        "subtree-copy",
+        "layout-resolver",
+        "section",
+        "object-state",
+        "se7enxweb"
+    ],
+    "authors": [
+        {
+            "name": "se7enxweb",
+            "homepage": "https://se7enx.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "support": {
+        "source": "https://se7enx.com",
+        "issues": "https://se7enx.com"
+    },
+    "require": {
+        "php": ">=8.2",
+        "doctrine/dbal": "^3.0 || ^4.0",
+        "ibexa/core": "^5.0",
+        "netgen/layouts-core": "^2.0",
+        "symfony/console": "^7.1",
+        "symfony/framework-bundle": "^7.1",
+        "ramsey/uuid": "^4.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.0",
+        "symfony/phpunit-bridge": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Bundle\\SevenxExpPlatformNGSubtreeCopyWithLayouts\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Bundle\\SevenxExpPlatformNGSubtreeCopyWithLayouts\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    }
+}
